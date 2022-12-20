@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form id="form1" name="form1" class="" action="script.php" method="post">
+      <label for="login">Label for input 1</label>
+      <input type="text" name="login" id="login" value="">
+      <label>Label for input 2<input type="text" name="" value=""></label>
+      <br>
+      <input type="hidden" name="" value=""><br>
+      <input maxlength="10" required type="text" name="" value="" placeholder="Введите сюда логин"><br>
+      <input readonly type="tel" name="" value=""><br>
+      <input type="password" size="10" name="" value=""><br>
+      <input type="search" name="" value="" list="my_dl"><br>
+      <datalist class="" id="my_dl">
+        <option value="computers"></option>
+        <option value="notebooks"></option>
+      </datalist>
+      <input size="10" type="email" name="" value="efimov@mail.ru"><br>
+      <input type="date" name="" value=""><br>
+      <input type="month" name="" value="" disabled><br>
+      <input type="week" name="" value=""><br>
+      <input type="time" name="" value=""><br>
+      <input type="datetime-local" name="" value=""><br>
+      <input type="number" name="" value="" min=10 max=100 step=2><br>
+      <input type="range" name="" value="70" min=0 max=100><br>
+      <input type="color" name="" value=""><br>
+      <input type="checkbox" name="" checked><br>
+      <input type="radio" name="r1" value="1"><br>
+      <input type="radio" name="r1" value="2"><br>
+      <input type="radio" name="r1" value="3" checked><br>
+      <input type="file" multiple accept="audio/*,video/*,.pdf" name="" value=""><br>
+      <input type="button" name="" value="Press me"><br>
+      <input type="submit" name="" value="Submit"><br>
+      <input type="image" width="40" src="home.png" name="" alt="Submit"><br>
+      <input type="reset" value="Reset"><br>
+
+      <button type="reset" name="button"></button><br>
+
+
+      <select class="" name="select1" size="0">
+        <optgroup label="label1">
+          <option value="1">item 1</option>
+          <option value="2">item 2</option>
+          <option value="3">item 3</option>
+        </optgroup>
+        <optgroup label="label 2">
+          <option value="4" selected>item 4</option>
+          <option value="5">item 5</option>
+        </optgroup>
+
+      </select><br>
+
+      <textarea name="name" rows="8" cols="10" wrap="off"></textarea>
+
+      <fieldset>
+        <legend>
+          <label for="">group</label>
+        </legend>
+
+      </fieldset>
+
+    </form>
+    <input type="radio" name="r1" value="4" form="form1"><br>
+
+    <form onsubmit="return false" oninput="result.value = a.valueAsNumber + b.valueAsNumber">
+      <input type="number" name="a" value="">
+      <input type="number" name="b" value="">
+      <output name="result"></output>
+    </form><br>
+
+    <progress value="30" max="100">0%</progress><br>
+    <meter value="102" min="0" max="100" low="80"></meter><br>
+
+
+  </body>
+</html>

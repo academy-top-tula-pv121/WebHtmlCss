@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      a{
+        color: red;
+      }
+      a:link{
+        color: red;
+      }
+      a:visited{
+        color: green;
+      }
+      /*
+      li:hover{
+        color: red;
+      }
+      input:focus{
+        color: red;
+      }*/
+      input:valid{
+        color: green;
+      }
+      input:invalid{
+        color: red;
+      }
+      input:enabled{
+        background: yellow;
+      }
+      input:disabled{
+        background: aqua;
+      }
+      input:checked{
+        color: white;
+        background: black;
+      }
+      ol li:only-child{
+        color: magenta;
+      }
+      li:first-child{
+        color: red;
+      }
+      li:last-child{
+        color: blue;
+      }
+      li:nth-child(odd){
+        color: green;
+      }
+      li:nth-child(even){
+        color: lightgreen;
+      }
+      li:nth-child(n+2){
+        color: red;
+      }
+      p.bukva::first-letter{
+        font-size: 64px;
+      }
+      p.line::first-line{
+        color:red;
+      }
+
+      .alert{
+        color: red;
+      }
+      .alert::before{
+        content: "Alert! ";
+        font-weight: bold;
+      }
+      .alert::after{
+        content: url(home.png);
+        width: 30px;
+      }
+
+      .progress{
+        width: 200px;
+        height: 50px;
+        border: 2px solid black;
+        background: #999;
+      }
+      .progress::before{
+        content: "";
+        display: block;
+        width: 80px;
+        height: 50px;
+        background: pink;
+      }
+
+      .mytable {
+        width: 500px;
+        font-size: 30px;
+      }
+      .mytable tr:nth-child(even){
+        background: black;
+        color: white;
+      }
+
+      .mytable td:hover{
+        background: red;
+        color: pink;
+      }
+
+      div,
+      .mytable td,
+      li{
+        padding: 10px;
+      }
+
+      .ooo{
+        color: yellow;
+        font-size: 36px;
+        text-decoration: line-through;
+      }
+      .ppp{
+        color:blue;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://wb.ru">WB</a>
+    <ol>
+      <li>Item 1</li>
+    </ol>
+    <ul>
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+      <li>item 4</li>
+      <li>item 5</li>
+      <li>item 6</li>
+    </ul>
+    <form>
+      <input type="text" name="" value="aaaaaaa"><br>
+      <input type="number" name="" value="123456"><br>
+      <input type="email" name="" value="ccccccc"><br>
+      <input type="text" name="" value="aaaaaaa" disabled><br>
+      <input type="checkbox" name="" value="1">Check 1</input>
+      <input type="checkbox" name="" value="2">Check 2</input>
+      <input type="checkbox" name="" value="3">Check 3</input>
+    </form>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p class="bukva">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p class="line">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>jhkjh kjhdkjash kjhasdj fdkjashfjdkashf </p>
+    <p>jhkjh kjhdkjash kjhasdj fdkjashfjdkashf </p>
+    <p class="alert">Djhkjh kjhdkjash kjhasdj fdkjashfjdkashf </p>
+    <p>jhkjh kjhdkjash kjhasdj fdkjashfjdkashf </p>
+
+    <div class="progress"></div>
+
+    <table class="mytable">
+      <tr>
+        <td>asdfas</td>
+        <td>asdfas</td>
+        <td>asdfas</td>
+      </tr>
+      <tr>
+        <td>asdfas</td>
+        <td>asdfas</td>
+        <td>asdfas</td>
+      </tr>
+      <tr>
+        <td>asdfas</td>
+        <td>asdfas</td>
+        <td>asdfas</td>
+      </tr>
+      <tr>
+        <td>asdfas</td>
+        <td>asdfas</td>
+        <td>asdfas</td>
+      </tr>
+      <tr>
+        <td>asdfas</td>
+        <td>asdfas</td>
+        <td>asdfas</td>
+      </tr>
+    </table>
+
+    <div class="ooo">Lorem ipsum
+      <p class="ppp">ipsum lorem</p>
+    </div>
+  </body>
+</html>

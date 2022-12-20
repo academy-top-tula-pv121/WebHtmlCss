@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      body{
+        font-size: 36px;
+      }
+      [alt]{
+        width: 50px;
+      }
+      img[src$=".png"]{
+
+      }
+      img[src$=".jpg"]{
+
+      }
+      [href^="https://"]{
+
+      }
+      [href^="http://"]{
+
+      }
+      /*
+      div[class]{
+        color: red;
+      }
+      p.blue{
+
+      }
+      p[class="pblue"]{
+        color: blue;
+      }
+
+      .c1[class~="pblue"]{
+        color: magenta;
+      }
+      */
+      [class*="b"]{
+        color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="home.png" alt="home">
+    <img src="home.png">
+    <p class="c1 pblue">Lorem ipsum</p>
+    <p class="c1 pgreen">Lorem ipsum</p>
+    <div class="">Lorem ipsum</div>
+    <span class="c1">Lorem ipsum</span>
+    <div class="c1 pblue">Lorem ipsum</div>
+
+    <p class="aaa bbb ccc">Lorem ipsum</p>
+  </body>
+</html>

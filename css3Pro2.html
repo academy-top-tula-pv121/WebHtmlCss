@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="r">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      body{
+        background: #8ED9C2;
+      }
+      @keyframes myanim {
+        from{
+          border-radius: 0;
+          background: red;
+        }
+        50%{
+          border-radius: 50%;
+          background: blue;
+        }
+        to{
+            border-radius: 0;
+            background: magenta;
+        }
+      }
+
+      .text1{
+        text-decoration-line: underline;
+        text-decoration-style: wavy;
+        text-decoration-color: red;
+      }
+      .sh_text{
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 60px;
+        color: #fff;
+        text-shadow: -1px -1px darkgray, 1px 1px gray;
+      }
+      .sh-div{
+        height: 200px;
+        width: 300px;
+        background: aqua;
+        /*box-shadow: inset 10px 10px 1px 0 gray;*/
+        box-shadow: inset 2px 2px 2px #444, 2px 2px 2px #eee;
+
+      }
+      .box{
+        background-color: aqua;
+        width: 50px;
+        height: 50px;
+        /*border-radius: 50%;*/
+        margin: 50px;
+      }
+      .box:hover{
+        /*transform: rotate(360deg);
+        transform-origin: left top;*/
+      }
+      .box1{
+        transition-duration: 2s;
+      }
+
+      .box2{
+        animation-name: myanim;
+        animation-duration: 4s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="box box2">
+      Text example
+    </div>
+  </body>
+</html>

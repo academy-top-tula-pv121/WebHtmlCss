@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap" rel="stylesheet">
+    <title>Css Text</title>
+  </head>
+  <style media="screen">
+    .dtext{
+      text-decoration: none;
+      /*text-transform: lowercase;*/
+      white-space: normal;
+      word-break: normal;
+      text-align: justify;
+      text-align-last: left;
+      word-spacing: 0;
+      letter-spacing: 0;
+      text-indent: 2em;
+
+      font-family: serif;
+      font-weight: normal;
+      font-stretch: expanded;
+      font-style: normal;
+
+      font-variant: small-caps;
+
+
+    }
+    a{
+      font-family: sans-serif;
+      text-decoration: none;
+    }
+    a:link{}
+    a:visited{}
+    a:hover{
+      color: red;
+      text-decoration: underline;
+    }
+    a:active{ color: green; }
+    a[href$=".pdf"] {
+      background-image: url(pdf.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      padding-left: 25px;
+    }
+
+    .abtn{
+      display: inline-block;
+      text-decoration: none;
+      padding: 10px 20px;
+      background-color: darkred;
+      color: white;
+    }
+    table{
+      /*border: 2px solid darkred;
+      border-collapse: collapse;
+      border-spacing: 5px;
+      caption-side: bottom;*/
+      width: 70%;
+      border-collapse: collapse;
+      font-family: sans-serif;
+    }
+    td{
+      /*
+      border: 2px solid darkred;
+      padding: 5px 10px;
+      margin: 0;
+      */
+      padding: 5px 10px;
+      background: lightgreen;
+      border-top: 1px solid transparent;
+      border-bottom: 1px solid white;
+    }
+    th {
+      padding: 5px 10px;
+      background: lightgray;
+      border-top: 1px solid darkgray;
+      border-bottom: 1px solid darkgray;
+    }
+    tr:nth-child(odd){
+      /*background-color: pink;*/
+    }
+    caption{
+      text-align: right;
+      font-family: sans-serif;
+    }
+  </style>
+  <body>
+    <p class="dtext">Lorem ipsum dolor sit amet,&nbsp;Consectetur adipisicing elit,<br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <a href="file.pdf">Download</a>
+    <a href="#" class="abtn">Click me</a>
+    <br><br>
+    <table>
+      <caption>Table #3</caption>
+      <thead>
+        <th>fdasgfd</th>
+        <th>dfsgdsfg</th>
+        <th>dfsgsdfg</th>
+      </thead>
+      <tr>
+        <td>dfsgdfsgsd</td>
+        <td>dfsgdfsg</td>
+        <td>dsfgdfsgs</td>
+      </tr>
+      <tr>
+        <td>dfsgdfsgsd</td>
+        <td>dfsgdfsg</td>
+        <td>dsfgdfsgs</td>
+      </tr>
+      <tr>
+        <td>dsfgdfsg</td>
+        <td>sdfgsdfg</td>
+        <td>dsfgdfsgdsf</td>
+      </tr>
+    </table>
+
+  </body>
+</html>

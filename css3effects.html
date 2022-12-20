@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>css effects</title>
+    <style>
+      .brd-rad{
+        width: 300px;
+        height: 300px;
+        background: transparent;
+        border: solid transparent 10px;
+
+        /*border-radius: 20px/50px;*/
+
+        /*
+        border-top: none;
+        border-bottom: none;
+        border-radius: 50px/50%;
+        */
+
+        /*border-bottom-left-radius: 100%;*/
+
+        /*border-radius: 0 50% 50% 50%;*/
+
+        /*border-radius: 0 100%;*/
+        border-image: url("ok.png") 20%;
+      }
+      .convert{
+        box-sizing: border-box;
+        width: 600px;
+        height: 300px;
+        padding: 30px;
+      }
+      .convert-color{
+        box-sizing: border-box;
+        height: 150px;
+        width: 50%;
+        margin: 0 auto;
+        border: 10px solid transparent;
+        border-image: 10 repeating-linear-gradient(45deg, #A7CECC, #A7CECC 10px, transparent 10px,
+              transparent 20px, #F8463F 20px, #F8463F 30px, transparent 30px, transparent 40px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="brd-rad">
+
+    </div>
+    <br>
+    <br>
+    <div class="convert">
+      <div class="convert-color">
+
+      </div>
+
+    </div>
+  </body>
+</html>

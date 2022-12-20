@@ -1,0 +1,44 @@
+body{
+  background: lightgray;
+}
+
+.wrap{
+  height: 300px;
+  border: solid 2px red;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: space-around;
+}
+
+.div-item{
+  width: 200px;
+  background: magenta;
+  margin: 10px;
+  padding: 20px;
+}
+
+.first-item{
+  order: -1;
+}
+
+.item1{
+  flex-grow: 1;
+}
+.item0-5{
+  flex-grow: 0.5;
+}
+.item3{
+  flex-grow: 3;
+}
+
+.height200{
+  height: 200px;
+}
+
+.pcenter
+{
+  margin: auto auto;
+}
